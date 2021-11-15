@@ -1,0 +1,44 @@
+@import url(extras-css/encabezado-piepag-bar_menu_despegable.css); /*css del encabezado estatico, pie de pagina y menu desplegable*/
+@import url(extras-css/scroll-bar.css);/*scroll bar minimalista*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuerpo-turno{
+    width: 800px;
+    height: 1000px;
+/*    background-image: url(../icons-imgs/fondo-covid.jpg);*/
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding:30px;
+    margin:auto;
+    margin-top:0px;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 4px 8px 20px darkgray;
+    font-family: "Corbel";
+    z-index: -1;
+}
+
+.datos-derecha{
+    width: 380px;
+    height: 800px;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+    /*background-color: red;*/
+}
+
+
+.datos-izquierda{
+    width: 355px;
+    height: 800px;
+    margin-top: 20px;
+    text-align: center;
+    /*    z-index: 2;*/
+    /*background-color: #bb7171;*/
+}

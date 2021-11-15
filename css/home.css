@@ -1,0 +1,454 @@
+@import url(extras-css/encabezado-piepag-bar_menu_despegable.css); /*css del encabezado estatico, pie de pagina y menu desplegable*/
+@import url(extras-css/scroll-bar.css);/*scroll bar minimalista*/
+
+body{
+    background-image: url("../icons-imgs/fondo-covid.jpg");
+}
+
+/*conf home*/
+.contenido-global-home{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    margin: 0px 80px;
+}
+.margen-text-bienvenido{
+    margin-right: 30px;
+    margin: 20px;
+    padding-right: 120px;
+}
+.table{
+    text-align: justify;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.presentacion{
+    width: 750px;
+    height: 250px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+    justify-content: center;
+    /* background-color: blue; */
+}
+img {
+    border-radius: 5px;
+}
+.bienvenidos{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 650px;
+    height: 450px;
+    /* background-color: purple; */
+}
+.info-empresa{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    padding: 80px 0px 0px 180px;
+    margin: 0px 150px;
+    gap: 20px;
+}
+
+.video h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.info-empresa-de{
+    max-width: 50%;
+    height: 120px;
+    margin-left: 50px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    /* background-color: aquamarine; */
+}
+
+.info-empresa-iz{
+    width: 100%;
+    height: 450px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 25px;
+    align-content:center;
+    padding-right: 100px;
+    /* background-color: buttonface; */
+}
+
+.info-empresa-iz h2{
+    font-size: 30px;
+}
+.info-empresa-de h2{
+    font-size: 30px;
+
+}
+
+@media screen and (max-width:1690px) {
+
+    .bienvenidos{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .img-sagasti {
+        padding-top: 160px;
+    }
+
+    .info-empresa{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+    }
+    .info-empresa-iz{
+        padding-top: 40px;
+        text-align: justify;
+        font-size: 25px;
+        line-height: 25px;
+        padding-bottom: 40px;
+        /* background-color: buttonface; */
+    }
+    .info-empresa-de{
+        padding-top: 40px;
+
+        text-align: justify;
+        font-size: 25px;
+        line-height: 40px;
+        /* background-color: aquamarine; */
+    }
+
+    .video iframe{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1450px) {
+
+    .bienvenidos{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .img-sagasti {
+        padding-top: 160px;
+    }
+
+    .info-empresa{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+
+    }
+    .info-empresa-iz{
+        padding-top: 60px;
+        text-align: justify;
+        font-size: 25px;
+        line-height: 25px;
+        padding-bottom: 80px;
+        /* background-color: buttonface; */
+    }
+    .info-empresa-de{
+        padding-top: 60px;
+
+        text-align: justify;
+        font-size: 25px;
+        line-height: 40px;
+        /* background-color: aquamarine; */
+    }
+
+    .video iframe{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1440px) {
+    .contenido-global-home{
+        /*        background-color: blue;*/
+    }
+    .bienvenidos{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .img-sagasti {
+        padding-top: 160px;
+    }
+
+    .info-empresa{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+        padding-top: 30px;
+
+    }
+    .info-empresa-iz{
+        padding-top: 60px;
+        text-align: justify;
+        font-size: 25px;
+        line-height: 25px;
+        padding-bottom: 80px;
+        /* background-color: buttonface; */
+    }
+    .info-empresa-de{
+        padding-top: 60px;
+
+        text-align: justify;
+        font-size: 25px;
+        line-height: 40px;
+        /* background-color: aquamarine; */
+    }
+
+    .video iframe{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1024px) {
+    .contenido-global-home{
+        /*        background-color: purple;*/
+    }
+    .bienvenidos{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .img-sagasti {
+        padding-top: 160px;
+    }
+
+    .info-empresa{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+
+    }
+    .info-empresa-iz{
+        padding-top: 60px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 80px;
+        /* background-color: buttonface; */
+    }
+    .info-empresa-de{
+        padding-top: 100px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 40px;
+        /* background-color: aquamarine; */
+    }
+
+    .video iframe{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:830px) {
+    .contenido-global-home{
+        /*background-color: red;*/
+    }
+    .bienvenidos{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+    .presentacion h1{
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .presentacion p{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: bold;
+        text-align: justify;
+    }
+    .img-sagasti {
+        padding-top: 250px;
+
+    }
+    .img-sagasti img{
+        width: 400px;
+        height: auto;
+    }
+    .presentacion a{
+        text-align: center;
+        align-items: center;
+    }
+    .info-empresa{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 25px;
+
+    }
+    .info-empresa-iz{
+        padding-top: 70px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 80px;
+        /* background-color: buttonface; */
+    }
+    .info-empresa-de{
+        padding-top: 120px;
+
+        text-align: justify;
+        font-size: 20px;
+        line-height: 40px;
+        /* background-color: aquamarine; */
+    }
+
+    .contenedor-medio iframe{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 300px;
+
+    }
+}
+
+@media screen and (max-width:750px) {
+    .contenido-global-home{
+        /*background-color: blue;*/
+    }
+    .bienvenidos{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+    .presentacion h1{
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .presentacion p{
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: justify;
+    }
+    .img-sagasti {
+        padding-top: 200px;
+    }
+    .presentacion a{
+        text-align: center;
+        align-items: center;
+    }
+    .info-empresa{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 25px;
+
+    }
+    .info-empresa-iz{
+        padding-top: 10px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 80px;
+        /* background-color: buttonface; */
+    }
+    .info-empresa-de{
+        padding-top: 100px;
+
+        text-align: justify;
+        font-size: 20px;
+        line-height: 40px;
+        /* background-color: aquamarine; */
+    }
+
+    .video iframe{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 200px;
+
+    }
+
+}
+@media screen and (max-width:425px) {
+    .contenido-global-home{
+        /*background-color: skyblue;*/
+    }
+    .bienvenidos{
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 200px;
+        padding: 10px 0px 0px 0px;
+    }
+    .img-sagasti {
+        padding: 150px 0px 0px 0px;
+        width: 200px;
+    }
+
+    .info-empresa{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+
+    }
+    .info-empresa-iz{
+        padding-top: 30px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 80px;
+        /* background-color: buttonface; */
+    }
+    .info-empresa-de{
+        padding-top: 150px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 40px;
+        /* background-color: aquamarine; */
+    }
+
+    .video iframe{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        /*background-color: red;*/
+    }
+}

@@ -1,0 +1,394 @@
+@import url(extras-css/encabezado-piepag-bar_menu_despegable.css); /*css del encabezado estatico, pie de pagina y menu desplegable*/
+@import url(extras-css/scroll-bar.css);/*scroll bar minimalista*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Stint+Ultra+Condensed&display=swap');
+
+
+/*conf general*/
+body{
+    background-image: url("../icons-imgs/fondo-covid.jpg"); 
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.titulo{
+    padding: 30px;
+    color: white;
+    background-image: linear-gradient(60deg, #333 0%, #333 100%);
+    /*    background-color: #333;*/
+}
+nav{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+.submenu a{
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+
+
+} 
+.submenu ul{
+    list-style: none;
+    display: inline-block;
+    padding:18px;
+}
+
+.submenu ul li{
+    float: left;
+    margin-top: 20px;
+}
+
+.submenu ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+    font-size: 20px;
+    padding: 18px;
+}
+
+.submenu ul li a:hover{
+    background-color: #96979b;
+    border-radius: 25px;
+}
+
+section{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 100px;
+    align-items: center;
+}
+section h2{
+    padding-bottom: 15px;
+}
+section h3 {
+    text-align: justify;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 5px ;
+}
+
+section .abajo-s1{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 5px ;
+}
+section img{
+    height: 80%;
+}
+
+#doc{
+    height: 60%;
+    padding: 30px; 
+}
+
+.titulo-normas{
+    text-align: center;
+    font-size: 32px;
+     font-weight: bold;
+}
+.contenedor-normas-all section:nth-child(3){
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+}
+.contenedor-normas-all section:nth-child(4){
+
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+}
+.contenedor-normas-all section:nth-child(5){
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
+}
+
+@media screen and (max-width:1350px) {
+
+    section{
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    section > img{
+        height: 30%;
+    }
+    #doc{
+        height: 40%;
+    }
+
+    section .abajo-s1{
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 500;
+        margin-bottom: 5px ;
+        text-align: left;
+    }
+    .s{
+        text-align: center;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .s h3{
+        font-size: 15px;
+        font-weight: 500;
+    }
+} 
+
+@media screen and (max-width:1015px) {
+
+    section{
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+    }
+    section > img{
+        height: 30%;
+    }
+    #doc{
+        height: 40%;
+    }
+
+    section .abajo-s1{
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 500;
+        margin-bottom: 5px ;
+        text-align: left;
+    }
+    .s{
+        text-align: center;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .s h3{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+}  
+
+@media screen and (max-width:900px) {
+
+    section > img {
+        height: 25%;
+    }
+
+    #doc{
+        height: 35%;
+        padding: 30px; 
+    }
+    section .abajo-s1{
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 500;
+        margin-bottom: 5px ;
+        text-align: left;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .s h3{
+        font-size: 15px;
+        line-height: 15px;
+    }
+} 
+@media screen and (max-width:600px) {
+
+    section > img {
+        height: 25%;
+    }
+
+    .titulo-normas{
+        text-align: center;
+        font-size: 25px;
+         font-weight: bold;
+    }
+    #doc{
+        height: 30%;
+        padding: 30px; 
+    }
+
+    h2{
+        font-size: 16px;
+    }
+    .s h3{
+        font-size: 15px;
+        line-height: 15px;
+    }
+} 
+
+
+@media screen and (max-width:520px) {
+    
+    section > img {
+        height: 15%;
+    }
+    
+    h1{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .titulo-normas{
+        text-align: center;
+        font-size: 25px;
+         font-weight: bold;
+    }
+    #doc{
+     height: 30%;
+     padding: 30px; 
+     }
+     section .abajo-s1{
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 500;
+        margin-bottom: 5px ;
+        text-align: left;
+    }
+     h2{
+         font-size: 12px;
+     }
+     .s h3{
+         font-size: 10px;
+         line-height: 10px;
+     }
+ } 
+ @media screen and (max-width:425px) {
+    
+    section > img {
+        height: 13%;
+    }
+    
+    h1{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .titulo-normas{
+        text-align: center;
+        font-size: 25px;
+         font-weight: bold;
+    }
+    #doc{
+     height: 30%;
+     padding: 30px; 
+     }
+     section .abajo-s1{
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: 500;
+        margin-bottom: 5px ;
+        text-align: left;
+    }
+     h2{
+         font-size: 10px;
+     }
+     .s h3{
+         font-size: 8px;
+         line-height: 8px;
+     }
+ }
+@media screen and (max-width:1030px) {
+
+
+    .submenu ul{
+        list-style: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding:15px;
+    }
+
+    .submenu ul li{
+        float: left;
+        margin-top: 15px;
+    }
+
+    .submenu ul li a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    .submenu ul li a:hover{
+        background-color: #96979b;
+        border-radius: 25px;
+    } 
+} 
+
+@media screen and (max-width:935px) {
+
+
+    .submenu ul{
+        list-style: none;
+        display: flexbox;
+        text-align: center;
+        justify-content: center;
+        padding:15px;
+    }
+
+    .submenu ul li{
+        float: left;
+        margin-top: 15px;
+
+    }
+
+    .submenu ul li a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+
+        font-size: 15px;
+        padding: 18px;
+    }
+
+    .submenu ul li a:hover{
+        background-color: transparent;
+        border-radius: 25px;
+    } 
+} 
+
+@media screen and (max-width:805px) {
+
+
+    .submenu ul{
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        padding:15px;
+    }
+
+    .submenu ul li{
+        float: none;
+        margin-top: 15px;
+
+    }
+
+    .submenu ul li a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+
+        font-size: 15px;
+        padding: 18px;
+    }
+
+    .submenu ul li a:hover{
+        background-color: #96979b;
+        border-radius: 25px;
+    } 
+} 

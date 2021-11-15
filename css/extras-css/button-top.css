@@ -1,0 +1,24 @@
+#btn-back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    border: 0px;
+    border-radius: 50%;
+    background: rgba(280,280,280,.2);
+    box-shadow: 4px 3px 1px black;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+
+#btn-back-to-top i{
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transition: .2s;
+    color: #333;
+    font-size: 15px;
+}
+
